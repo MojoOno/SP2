@@ -29,6 +29,7 @@ public class ElectricCar extends ACar{
             regFee = 330;
             result += regFee;
         }
+
         return result;
     }
     public int getBatteryCapacityKWh(){

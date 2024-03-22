@@ -4,11 +4,11 @@ public class Main {
         FleetOfCars fleet = new FleetOfCars();
 
         Car gasolineCar1 = new GasolinCar("DJ 40048", "Toyota", "Yaris", 5, 22);
-        Car gasolineCar2 = new GasolinCar("YO 00001", "Porsche", "Panamera", 5, 11);
+        Car gasolineCar2 = new GasolinCar("YO 00001", "Porsche", "Panamera", 5, 22);
         Car dieselCar1 = new DieselCar("AB 12345", "Ford", "Mustang", 3, 18, true);
         Car dieselCar2 = new DieselCar("IB 04081", "Fiat", "Multipla", 7, 18, false);
         Car electricCar1 = new ElectricCar("BI 01337", "Tesla", "Candy", 5, 75, 576);
-        Car electricCar2 = new ElectricCar("SO 44444", "Audi", "Q7", 5, 60, 600);
+        Car electricCar2 = new ElectricCar("SO 44444", "Audi", "Q7", 5, 600, 20 );
 
         fleet.addCar(gasolineCar1);
         fleet.addCar(gasolineCar2);

@@ -1,7 +1,7 @@
 License plate, Brand, Model, Doors, Km/L, Particle, Battery, Range
 DJ 40048, Toyota, Yaris, 5, 22, , , 
-YO 00001, Porsche, Panamera, 5, 11, , , 
+YO 00001, Porsche, Panamera, 5, 22, , , 
 AB 12345, Ford, Mustang, 3, 18, true, , 
 IB 04081, Fiat, Multipla, 7, 18, false, , 
 BI 01337, Tesla, Candy, 5, , , 75, 576
-SO 44444, Audi, Q7, 5, , , 60, 600
+SO 44444, Audi, Q7, 5, , , 600, 20

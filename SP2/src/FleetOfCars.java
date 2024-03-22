@@ -31,11 +31,11 @@ public class FleetOfCars {
     }
 
     @Override
-    public String toString() {
-        System.out.println("Cars in fleet:");
+    public String toString() { //Læs op på nedenstående!
+        StringBuilder output = new StringBuilder("Cars in fleet:\n");
         for (Car c : fleetList) {
-            System.out.println(c);
+            output.append(c.toString()).append("\n");
         }
-        return "";
+        return output.toString();
     }
 }
