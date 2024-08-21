@@ -1,0 +1,8 @@
+Level 4.2
+
+KitchenDrawer class continued
+
+Expand your KitchenDrawer class with the following method
+public Utensil getRandom
+
+The method should return a random Utensil from the list.

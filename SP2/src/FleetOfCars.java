@@ -30,6 +30,8 @@ public class FleetOfCars {
         io.saveData(header, dataList, path);
     }
 
+
+
     @Override
     public String toString() { //Læs op på nedenstående!
         StringBuilder output = new StringBuilder("Cars in fleet:\n");

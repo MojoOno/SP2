@@ -1,0 +1,51 @@
+@startuml
+!pragma layout smetana
+'https://plantuml.com/object-diagram
+
+object Player
+object Dice
+object Board
+object Field
+object ChanceCard
+object Deck
+object Balance
+object Chance
+object PropertyField
+object Business
+object Plot
+object Tax
+object Prison
+object Visit
+object Parking
+object Game
+object Deeds
+
+PropertyField "6" <|-- Business
+PropertyField "22" <|-- Plot
+
+Field <|-- "28" PropertyField
+Field <|-- "6" Chance
+Field <|-- "1" Tax
+Field <|-- "1" Prison
+Field <|-- "1" Parking
+Field <|-- "1" Visit
+
+Board "1" *-- "40" Field
+
+Deck "1" *-- "46" ChanceCard
+
+Player *-- Balance
+Player o-- Deeds
+
+Board o-- "2" Dice
+
+Game "1" *-- "2..6" Player: has
+Game *-- Board
+Game *-- Deck
+
+
+@enduml
+
+// extension ( is a) <|--
+// composition (must have) *--
+// aggregation (can have) o--

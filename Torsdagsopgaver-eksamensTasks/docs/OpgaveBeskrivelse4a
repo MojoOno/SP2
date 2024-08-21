@@ -1,0 +1,40 @@
+Level 4.1
+
+KitchenDrawer class continued
+
+Expand your KitchenDrawer class with the following methods:
+public Utensil getUtensil(int indexNumber)
+public Knife getKnife
+public Fork getFork
+public Spoon getSpoon
+public boolean checkIfDrawerIsClean
+public void cleanAll
+public void polishFineDiningUtensils
+
+
+The getKnife, getFork and getSpoon methods should all work in the same
+manner. The method should loop through the list of Utensils and use
+the instanceof operator to check for a Knife, Fork or Spoon object
+repsectively. Then remove the object from the KitchenDrawer and return it.
+
+checkIfDrawerIsClean should loop through the Utensil list and check if
+every Utensil is clean. If you encounter a dirty Utensil return false,
+otherwise all Utensils must be clean and the method shpould return true.
+
+cleanAll must loop through the Utensil list and call the clean method on
+every Utensil.
+
+polishFineDiningUtensils should loop through the Utensil list and check
+if each Utensil is used for fine dining. If so, the polish method must
+be called on the Utensil.
+
+getUtensil should return the Utensil at a given index. Remember to check
+that the given index is not empty.
+
+Test the new methods in your Menuvalg.Main. You should be able to retrieve a
+Spoon from the drawer, use it and then return it to the drawer.
+It might look like this:
+Spoon favouriteSpoon = drawer.getSpoon();
+favouriteSpoon.use();
+drawer.add(favouriteSpoon);
+drawer.checkIfDrawerIsClean(); //Should return false now

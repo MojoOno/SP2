@@ -1,0 +1,36 @@
+Level 4
+
+Create a Utensil abstract class, with the following attributes and methods:
+private boolean clean
+private boolean polished
+private String useCase
+
+public Utensil(String useCase)
+public void polish
+public void clean
+public boolean isClean
+public boolean isPolished
+public boolean forFineDining
+public boolean forCooking
+public void use
+
+The constructor should set the useCase variable. The next two methods are setter methods,
+setting the boolean values to true. The last method (use) should set the clean and polished
+attributes to false. The last four methods should return true if the corresponding attribute
+is true/equal.
+
+Create a Knife, Fork, Spoon and Whisk subclass. Each class should have it's own toString() method.
+A Whisk should never be for fine dining.
+
+Create a KitchenDrawer class. The KitchenDrawer must contain a list of Utensils. It should have
+the following classes:
+
+public void add
+public void remove
+public void display
+public String toString
+
+Test your classes by creating a Menuvalg.Main class with a main method. Instantiate a KitchenDrawer and
+at least 12 Utensils. Some utensils should have the useCase "fine dining", some "casual dining"
+and some "cooking". Test to see if your add and remove methods work as intended. Print the contents
+of the KitchenDrawer to the console.

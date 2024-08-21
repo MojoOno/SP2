@@ -1,0 +1,179 @@
+1.	Ordleg
+
+Skriv en klasse der hedder Ordleg.
+Skriv metoden gentagOrd der tager et parameter af typen ArrayList<String> og et
+parameter k af typen int, og har returtypen ArrayList<String>. Metoden skal
+returnere en ny ArrayList hvor hver String i input-arraylisten er gentaget k gange.
+Et kald til metoden med en ArrayList med elementerne ”Hello” og ”World” og et
+integer-argument med værdien 3 skal returnere en ArrayList med elementerne
+”Hello”, ”Hello”, ”Hello”, ”World”, ”World”, ”World”.
+Hvis k er 0 eller et negativt tal skal der kastes en exception.
+Der skal også kastes en exception hvis arraylisten der gives som parameter er null.
+Skriv test til metoden.
+
+
+Hvis du har tid …
+Skriv metoden sorteretOgTrimmet som tager en ArrayList af Strings som parameter,
+og returnerer en ny ArrayList af Strings som er sorteret efter Stringens længde,
+og hvor en String ikke forekommer mere end én gang.
+Hvis arraylisten der gives som parameter er null kastes en exception.
+Skriv test til metoden.
+
+ 
+2.	Menuvalg
+
+Skriv en klasse der hedder MinBrugerdialog med metode der hedder menuvalg, der
+tager en ArrayList af Strings som parameter og som præsenterer brugeren for en
+menu på skærmen, med et punkt for hver streng i listen.
+Som eksempel:  Hvis listen indeholder ”Agurk”, ”Tomat” og ”Salat” så skal følgende
+menu udskrives:
+1.	Agurk
+2.	Tomat
+3.	Salat
+
+                          Indtast dit valg:
+
+Metoden skal:
+•	udskrive menuen på skærmen.
+•	læse brugerens valg (fra tastaturet).
+•	returnere menuvalget som en int svarende til det nummer menupunkt der er valgt.
+•	Inddrag fejlhåndtering af brugerens input i din løsning. Dette skal laves således,
+    at metoden kaster en exception hvis brugeren ikke indtaster et gyldigt valg.
+
+Hvis du har tid …
+Skriv et interface der hedder Brugerdialog, som indeholder metoden menuvalg, med
+samme metodesignatur som den du skrev i opgaven ovenfor og lad MinBrugerdialog
+implementere dette interface. Skriv en klasse der hedder Mockdialog som også
+implementerer Brugerdialog. Mockdialog’s udgave af  menuvalg skal ikke skrive en
+menu ud på skærmen.  Mockdialog har i stedet en instansvariabel som er en int, der
+repræsenterer hvad en bruger kunne have givet af input i et menuvalg, samt en
+konstruktør som sætter denne int. Et kald til metoden menuvalg i Mockdialog skal
+returnere denne int.
+
+ 
+3.	Returpenge
+
+Skriv en klasse der hedder Butik.
+Skriv en metode kaldet køb der tager to heltal (int), der repræsenterer hhv. en vares pris og det betalte beløb.
+Metoden skal returnere hvor mange byttepenge, der skal gives tilbage.
+Hverken beløbet eller prisen må være negative tal – hvis det er tilfældet kastes en exception.
+Såfremt det betalte beløb er for lille i forhold til prisen, skal der ligeledes kastes en exception.
+Skriv test til metoden.
+Hvis du har tid …
+Skriv en metode byttepenge der returnerer en String med præcis hvilke sedler og/eller mønter, der skal gives tilbage i byttepenge, således at der gives færrest muligt antal mønter/sedler tilbage. Denne metode tager det samlede beløb af byttepenge som parameter.
+Det antages, at der findes følgende værdier af mønter/sedler som butikken kan give tilbage med: 100 kr, 50 kr, 20 kr, 10 kr, 5 kr, 2 kr og 1 kr. Det antages også at du har uendeligt mange af hver type til rådighed.
+
+Eksempel:
+Byttepenge: 	466 kr =
+	 2 * 200 kr
+	1 * 50 kr
+	1 * 10 kr
+	1 * 5 kr
+	1 * 1 kr
+
+
+
+
+ 
+
+4.	User
+
+Skriv en klasse kaldet User, der indeholder fornavn, efternavn, email og tlfnr.
+Skriv flg. metoder:
+•	Konstruktør
+•	Get og set metoder
+•	toString metode
+•	Skriv en equals metode baseret på email.
+
+Man skal kunne instantiere en User som kun har en email, fornavn og efternavn tilknyttet.
+
+•	Skriv en klasse kaldet UserList, der indeholder en liste af User objekter.
+•	Skriv en metode som skal hedde addUser i UserList, der tilføjer en User til listen, hvis der ikke allerede findes en med samme email.
+•	Skriv test til User og UserList
+
+Hvis du har tid …
+
+•	Skriv en metode i UserList, der returnerer en (ny) ArrayList<User>, der er sorteret efter først fornavn, derefter efternavn. Brug Collections.sort metoden til at sortere.
+
+
+
+
+
+
+
+
+
+
+
+5.	Lønberegning
+
+Skriv et program, som beregner løn for medarbejdere.
+1.
+Skriv et interface Betaling med metoden: public double beregnLøn()
+
+2.
+Skriv tre klasser, som implementerer interfacet.
+
+Klassen FastLønMedarbejder har flg. attribut:
+•	månedsløn
+
+Lønberegning er enkel, idet denne type medarbejder får fast månedsløn.
+
+
+Klassen TimelønnetMedarbejder har flg. attributter:
+•	antal timer
+•	timeløn
+
+Lønberegning er antal timer ganget med timelønnen.
+
+
+Klassen ProvisionsMedarbejder har flg. attributter:
+•	grundløn
+•	salg
+•	provision (procentsats)
+
+Lønberegning er grundløn plus provision af medarbejderens salg.
+Eksempel: Grundløn 20000 kr. Salg 10000 kr. Provision 20% giver en løn på 22000kr.
+6.	Censur
+
+Skriv en metode, der som parametre tager en streng, der er en sætning af ord med mellemrum imellem og et String[] af forbudte ord.
+Metoden skal returnere en NY streng, der laves på følgende måde:
+•	Ord fra sætningen, der ikke findes i array’et med forbudte ord, skal tilføjes uændret.
+•	Ord fra sætningen, der findes i array’et med forbudte ord, skal erstattes med en ’*’.
+•	Mellemrum i sætningen skal bevares.
+Metoden skal returnere den nye ændrede sætning som en streng.
+Skriv test til metoden.
+HINTS:
+Brug Strings split-metode til at lave strengen om til et String-array
+fx String[] enkelteOrdISætningen = s.split(" ");
+Brug et nested for-loop til at loope igennem de forbudte ord og de enkelte ord i intputsætningen.
+Brug evt. en lokal boolean variabel til at holde styr på om det enkelte ord skal tilføjes eller censureres.
+
+Hvis du har tid …
+1.	I stedet for at udskifte forbudte ord med en enkelt ’*’, så skal de udskiftes med et antal ’*’, der svarer til ordets længde.
+2.	Forbudte ord skal findes, selv hvis de står med en anden case (store/små bogstaver) i sætningen end i arrayet af forbudte ord.
+
+
+
+
+
+
+
+7.	Sorter ordene i en fil
+
+Skriv en klasse med en metode der læser en fil og sætter de ord filen indeholder ind i en ArrayList.
+Sørg for at alle ord er lowercase inden de tilføjes til listen.
+Sorter derefter ordene alfabetisk, fjern dubletter og skriv dem til filen igen.
+
+
+
+
+8.	To slags spillere
+
+Skriv et interface der hedder Spiller, og som indeholder metoden gætEtTal. Denne metode tager en int som parameter der angiver hvad det maksimale tal man kan gætte på er (dvs hvis vi kalder denne int for max, så kan der gættes på et tal mellem 1 og max). Metoden returnerer en int, som er det tal spilleren har gættet på.
+Skriv to klasser som implementerer dette interface:
+Menneskespiller, hvor brugeren skal indtaste sit gæt som læses med en Scanner.
+Computerspiller som gætter på et tilfældigt tal ved brug af Random.
+
+
+

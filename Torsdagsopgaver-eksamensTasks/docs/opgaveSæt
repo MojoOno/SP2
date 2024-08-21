@@ -1,0 +1,139 @@
+
+
+1.        Lønberegning
+
+Skriv et program, som beregner løn for medarbejdere.
+1.
+Skriv et interface Betaling med metoden: public double beregnLøn()
+
+2.
+Skriv tre klasser, som implementerer interfacet.
+
+Klassen FastLønMedarbejder har flg. attribut:
+∙       månedsløn
+
+Lønberegning er enkel, idet denne type medarbejder får fast månedsløn.
+
+
+Klassen TimelønnetMedarbejder har flg. attributter:
+∙       antal timer
+∙       timeløn
+
+Lønberegning er antal timer ganget med timelønnen.
+
+
+Klassen ProvisionsMedarbejder har flg. attributter:
+∙       grundløn
+∙       salg
+∙       provision (procentsats)
+
+Lønberegning er grundløn plus provision af medarbejderens salg.
+Eksempel: Grundløn 20000 kr. Salg 10000 kr. Provision 20% giver en løn på 22000kr.
+
+
+
+
+
+
+2.        Sorter ordene i en fil
+
+∙       Skriv en klasse med en metode der læser en fil og returnerer en ArrayList med
+de ord filen indeholder. Sørg for at alle ord er lowercase inden de tilføjes til listen.
+∙       Skriv en anden metode der sorterer ordene efter længden af ordet, fjerner
+dubletter og skriver dem til filen igen.
+Hvis du har tid …
+
+∙       Skriv en metode der tæller hvor mange gange hvert ord forekommer i filen, og returnerer resultatet som en Map.
+∙       Skriv en metode der returnerer hvilket ord der forekommer flest gange.
+
+
+
+
+
+
+
+3.        To slags spillere
+
+Skriv et interface der hedder Spiller,  som indeholder metoden gætEtTal.
+Denne metode tager en int som parameter der angiver hvad det maksimale
+tal man kan gætte på er (dvs hvis vi kalder variablen for max, så kan
+der gættes på et tal mellem 1 og max). Metoden returnerer en int,
+som er det tal spilleren har gættet på.
+
+Skriv to klasser som implementerer dette interface:
+Menneskespiller, hvor brugeren skal indtaste sit gæt som læses med en Scanner.
+Computerspiller som gætter på et tilfældigt tal ved brug af Random.
+Hvis du har tid …
+Skriv en klasse der hedder Gættespil, med en instansvariabel der angiver
+hvilket tal der skal gættes, som en int der sættes i konstruktøren.
+Skriv en metode der hedder tur som tager en Spiller som parameter.
+Denne metode skal udskrive i konsollen hvilket tal spilleren gætter på og
+returnere en boolean der angiver om spilleren gætter på det rigtige tal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.        Billetter
+Skriv en klasse der hedder Billet, som indeholder attributterne udstedelsestidspunkt (som angiver dato og klokkeslæt for hvornår billetten blev skabt i systemet), varighed ( i hele timer), pris pr. time og et id.
+
+Sørg for at id reflekterer hvilket nummer i rækken billetten er, ud af alle oprettede billetter i systemet.
+∙       Skriv en toString metode der sikrer at billetten bliver udskrevet pænt.
+∙       Skriv metoden getPris som returnerer billettens pris.
+∙       Skriv metoden erGyldig der returnerer false hvis billetten er udløbet.
+Skriv test til erGyldig-metoden og getPris-metoden.
+Hvis du har tid …
+Skriv en klasse der hedder BilletSystem med metoden opretBillet der tager en varighed i hele timer, og en pris pr time som parametre. Varigheden af en billet kan max være 24 timer – hvis man forsøger at oprette en billet med en længere varighed kastes en exception.
+Når der oprettes en billet lægges den i en ArrayList.
+
+Skriv en test til opretBillet.
+
+Skriv en metode getBilletter der returnerer listen af billetter sorteret efter pris.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.        Terninger
+Skriv en klasse der hedder Terning med en instansvariabel der repræsenterer det antal øjne som terningen viser. Skriv en metode der hedder kast som ændrer værdien af øjnene. Terningen er  6-sidet.
+Skriv en klasse der hedder Terningspil, med en metode kaldet terningProdukt som prompter brugeren  for et ønsket produkt, for derefter at kaste med to terninger indtil det ønskede tal opnås. For hver kast udskrives resultatet på konsollen.
+Et eksempel på en kørsel af programmet:
+Hvilket produkt vil du have?: 24
+3 og 1 = 3
+3 og 5 = 15
+6 og 1 = 6
+3 og 4 = 12
+6 og 2 = 12
+6 og 4 = 24
+Hvis du har tid …
+Udvid programmet sådan at der kastes en exception hvis brugeren ønsker et produkt som det ikke er muligt at få med to 6-sidede terninger.
+
+
